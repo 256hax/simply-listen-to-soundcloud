@@ -1,0 +1,59 @@
+{
+  "name": "simply-listen-to-soundcloud",
+  "version": "0.1.0",
+  "description": "It's really simple. Just linsten to SoundCloud PC version on Mac.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/256hax/simply-listen-to-soundcloud.git",
+  "keywords": [
+    "Electron",
+    "SoundCloud",
+    "Browser",
+    "Simple"
+  ],
+  "author": "256hax",
+  "license": "MIT License",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.0"
+  },
+  "build": {
+    "productName": "simply-listen-to-soundcloud",
+    "appId": "com.tanebox.simple-listen",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "dist/electron/**/*",
+      "build/icons/*"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "build/icons/icon.icns",
+      "target": [
+        "dmg"
+      ],
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "icon": "build/icons/icon.ico",
+      "target": "nsis"
+    }
+  }
+}
