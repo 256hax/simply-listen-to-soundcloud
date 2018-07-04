@@ -2,7 +2,7 @@
 
 SoundCloudのPC版を表示するだけのシンプルなプレイヤーです。
 
-:musical_note: Listen to SoundCloud PC version on Mac. :sparkles:
+:musical_note: It's simple, SoundCloud Player. Listen to SoundCloud PC version on Mac. :sparkles:
 
 If you don't want to run SoundCloud on your some Browsers, you will love this app.
 
@@ -20,5 +20,5 @@ Then run "Simply Listen to SoundCloud.app" on your Mac.
 ## Technologies
 
 Build cross platform desktop apps "Electron".
-- <webview> Tag (Display external web content in an isolated frame like IFrame)
-- Fullview screen. Adjust HTML and CSS.
+- "webview" Tag (Display external web content in an isolated frame like IFrame)
+- Adjust HTML and CSS for Fullview screen.
