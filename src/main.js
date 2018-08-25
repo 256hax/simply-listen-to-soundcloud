@@ -1,5 +1,15 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const { app, BrowserWindow } = require('electron')
+
+// for App version auto updater (DISABLED)
+//const { autoUpdater } = require('electron')
+
+// electron-about-window module.
+// reference: https://github.com/rhysd/electron-about-window
+// example: https://github.com/rhysd/electron-about-window/blob/master/example/main.js
+const { electron, Menu } = require ('electron')
+const join = require('path').join;
+const openAboutWindow = require('about-window').default;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -14,6 +24,27 @@ function createWindow () {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+
+  //--- about window ---
+  const menu = Menu.buildFromTemplate([
+      {
+          label: 'About',
+          submenu: [
+              {
+                  label: 'About This App',
+                  click: () =>
+                      openAboutWindow({
+                          icon_path: join(__dirname, '../assets/images/icons/icon.png'),
+                          copyright: 'Copyright 256hax',
+                          package_json_dir: __dirname
+                          //,open_devtools: process.env.NODE_ENV !== 'production', // for debug
+                      }),
+              },
+          ],
+      },
+  ]);
+  Menu.setApplicationMenu(menu);
+  //--- /about window ---
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -48,3 +79,14 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+
+/*------------------------------------------------
+  Auto Updater (DISABLED)
+  ------------------------------------------------*/
+/*
+const server = 'https://github.com/'
+const feed = `${server}/256hax/simply-listen-to-soundcloud/${process.platform}/${app.getVersion()}`
+
+autoUpdater.setFeedURL(feed)
+*/
