@@ -1,0 +1,9 @@
+## Auto Updater
+### HowTo implementation
+- https://github.com/electron/electron/blob/master/docs/tutorial/updates.md
+- https://github.com/electron/update.electronjs.org
+
+### Need code signature to implementation
+- need code signature for build and auto update.
+- code singnature can generate by Developer ID and Gatekeeper.
+- but I have to join Apple Developer Program (It's not free) if I want to get Developer ID and Gatekeeper.

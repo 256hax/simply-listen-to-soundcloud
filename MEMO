@@ -1,5 +1,0 @@
-[run app command]
-simply-listen-to-soundcloud user$ electron .
-
-[build command for Mac]
-simply-listen-to-soundcloud user$ electron-packager . "Simply Listen to SoundCloud" --platform=darwin --arch=x64 --icon=assets/images/icons/icon.icns
