@@ -9,7 +9,7 @@ If you don't want to run SoundCloud on your some Browsers, you will love this ap
 
 
 ## Usage 使い方
-「[Simply Listen to SoundCloud.app.zip](https://github.com/256hax/simply-listen-to-soundcloud/tree/master/release)」をダウンロードして解答し、それをMacで実行したら起動できます。
+「[Simply Listen to SoundCloud.app.zip](https://github.com/256hax/simply-listen-to-soundcloud/tree/master/release)」をダウンロードして解凍し、それをMacで実行したら起動できます。
 
 Download "Simply Listen to SoundCloud.app.zip" and unarchive.
 
@@ -23,8 +23,12 @@ Build cross platform desktop apps "Electron".
 
 
 ## CHANGELOG
-### 0.2.0 (2018-08-25)
-- Update latest electron.
+### 0.2.1
+- Fix security vulnerability.
+
+### 0.2.0
+- Update latest Electron.
 - Add "About This App" menu.
-### 0.1.0 (2018-07-02)
+
+### 0.1.0
 - First release.

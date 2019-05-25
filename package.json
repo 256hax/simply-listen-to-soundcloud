@@ -1,6 +1,6 @@
 {
   "name": "simply-listen-to-soundcloud",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "It's really simple. Just linsten to SoundCloud PC version on Mac.",
   "main": "src/main.js",
   "scripts": {

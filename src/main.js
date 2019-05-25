@@ -22,7 +22,7 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile('src/index.html')
 
-  // Open the DevTools.
+  // [For debug] Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
   //--- about window ---
@@ -37,7 +37,8 @@ function createWindow () {
                           icon_path: join(__dirname, '../assets/images/icons/icon.png'),
                           copyright: 'Copyright 256hax',
                           package_json_dir: __dirname
-                          //,open_devtools: process.env.NODE_ENV !== 'production', // for debug
+                          // [For debug]
+                          //,open_devtools: process.env.NODE_ENV !== 'production'
                       }),
               },
           ],

@@ -1,7 +1,7 @@
 ## Run app command
 ```
 $ mv [PJ directory]
-simply-listen-to-soundcloud user$ electron .
+$ electron .
 ```
 
 ## Build command for Mac
@@ -32,3 +32,13 @@ $ npm install --save electron
 
 ## GitHub Repository information (check Repository size)
 https://api.github.com/repos/256hax/simply-listen-to-soundcloud
+
+
+## Enable Debug Mode
+Uncomment following lines in main.js. Search "debug".
+1. "mainWindow.webContents.openDevTools()"
+2. ",open_devtools: process.env.NODE_ENV !== 'production',"
+
+```
+$ vi src main.js
+```
