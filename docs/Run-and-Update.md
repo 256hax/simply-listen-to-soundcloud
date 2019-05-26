@@ -1,19 +1,22 @@
 ## Run app command
 ```
-$ mv [PJ directory]
+$ cd [PJ directory]
 $ electron .
 ```
 
-## Build command for Mac
+## Enable Debug Mode
+Uncomment following lines in main.js. Search "debug".
+1. "mainWindow.webContents.openDevTools()"
+2. ",open_devtools: process.env.NODE_ENV !== 'production',"
+
 ```
-$ mv [PJ directory]
-$ electron-packager . "Simply Listen to SoundCloud" --platform=darwin --arch=x64 --icon=assets/images/icons/icon.icns --overwrite
+$ vi src main.js
 ```
 
 ## npm update command
 Install to local(PJ directory).
 ```
-$ mv [PJ directory]
+$ cd [PJ directory]
 $ npm install -g electron
 $ npm install -g electron-packager
 ```
@@ -32,13 +35,3 @@ $ npm install --save electron
 
 ## GitHub Repository information (check Repository size)
 https://api.github.com/repos/256hax/simply-listen-to-soundcloud
-
-
-## Enable Debug Mode
-Uncomment following lines in main.js. Search "debug".
-1. "mainWindow.webContents.openDevTools()"
-2. ",open_devtools: process.env.NODE_ENV !== 'production',"
-
-```
-$ vi src main.js
-```
